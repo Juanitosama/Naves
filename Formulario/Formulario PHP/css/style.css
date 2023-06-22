@@ -1,0 +1,190 @@
+h1 {
+  text-align: center; /* Centra el texto del elemento h1 */
+  font-size: 24px; /* Establece el tamaño de fuente del elemento h1 en 24 píxeles */
+  font-weight: bold; /* Establece la negrita en el elemento h1 */
+  margin-top: 40px; /* Establece un margen superior de 40 píxeles en el elemento h1 */
+  margin-bottom: 20px; /* Establece un margen inferior de 20 píxeles en el elemento h1 */
+}
+
+body {
+  min-height: 100vh; /* Establece la altura mínima del cuerpo de la página como el 100% del alto de la ventana visible */
+  display: flex; /* Hace que el cuerpo de la página se comporte como un flexbox */
+  flex-direction: column; /* Establece la dirección de la caja flex como columna */
+}
+
+main {
+  flex: 1; /* Hace que el elemento 'main' ocupe todo el espacio restante del cuerpo de la página */
+}
+
+footer {
+  position: fixed; /* Establece la posición del elemento como fija */
+  bottom: 0; /* Establece la posición del elemento en la parte inferior */
+  left: 0; /* Establece la posición del elemento en la parte izquierda */
+  width: 100%; /* Establece el ancho del elemento en el 100% del ancho disponible */
+}
+
+form {
+  background-color: #ffffff; /* Establece el color de fondo del elemento en blanco */
+  width: 350px; /* Establece el ancho del elemento en 350 píxeles */
+  padding: 20px; /* Establece el relleno interno del elemento en 20 píxeles */
+  margin: 50px auto; /* Establece un margen superior e inferior de 50 píxeles y un margen lateral automático para centrarlo horizontalmente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra al elemento con una desenfoque gaussiano de 2 píxeles y una opacidad del 30% */
+  border-radius: 5px; /* Establece el radio de las esquinas del elemento en 5 píxeles */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+width: 100%; /* Establece el ancho de los elementos de entrada de tipo "text" y "number" y el elemento "select" al 100% del ancho disponible */
+padding: 10px; /* Establece el relleno interno de los elementos de entrada de tipo "text" y "number" y el elemento "select" en 10 píxeles en todas las direcciones */
+margin: 5px 0 15px; /* Establece el margen externo de los elementos de entrada de tipo "text" y "number" en 5 píxeles en la parte superior y inferior y en 0 píxeles a la izquierda y derecha, y el margen externo del elemento "select" en 15 píxeles en la parte inferior y en 0 píxeles a la izquierda y derecha */
+border: 1px solid #ccc; /* Establece un borde de 1 píxel sólido con un color de #ccc (gris claro) para los elementos de entrada de tipo "text" y "number" y el elemento "select" */
+border-radius: 4px; /* Establece el radio de las esquinas de los elementos de entrada de tipo "text" y "number" y el elemento "select" en 4 píxeles */
+box-sizing: border-box; /* Establece la caja del modelo de contenido de los elementos de entrada de tipo "text" y "number" y el elemento "select" como incluyente, lo que significa que el ancho y la altura de los elementos incluyen el relleno y el borde, pero no el margen */
+}
+
+input[type="submit"],
+input[type="reset"] {
+width: 100%; /* Establece el ancho de los botones de envío y reinicio en el 100% del ancho disponible */
+background-color: #4CAF50; /* Establece el color de fondo de los botones en verde */
+color: white; /* Establece el color del texto de los botones en blanco */
+padding: 10px; /* Establece el relleno interno de los botones en 10 píxeles */
+margin: 8px 0; /* Establece un margen superior e inferior de 8 píxeles y un margen lateral de 0 */
+border: none; /* Elimina los bordes de los botones */
+border-radius: 4px; /* Establece el radio de las esquinas de los botones en 4 píxeles */
+cursor: pointer; /* Establece el cursor en forma de mano para indicar que los botones son clickeables */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+background-color: #45a049; /* Establece el color de fondo de los botones en verde oscuro cuando el cursor pasa por encima */
+}
+
+p {
+margin: 0; /* Establece el margen del elemento p en 0 para eliminar cualquier espacio extra */
+}
+
+.input-group {
+display: flex; /* Hace que el elemento con la clase "input-group" se comporte como un flexbox */
+}
+.input-addon {
+padding: 10px; /* Establece el relleno interno del elemento con la clase "input-addon" en 10 píxeles */
+margin-left: 5px; /* Establece un margen izquierdo de 5 píxeles en el elemento con la clase "input-addon" */
+border: 1px solid #ccc; /* Establece un borde sólido de 1 píxel con un color gris claro en el elemento con la clase "input-addon" */
+border-radius: 4px; /* Establece el radio de las esquinas del elemento con la clase "input-addon" en 4 píxeles */
+background-color: #f5f5f5; /* Establece el color de fondo del elemento con la clase "input-addon" en gris claro */
+line-height: 1.5; /* Establece la altura de línea del elemento con la clase "input-addon" en 1.5 veces la altura de la fuente */
+}
+
+.nav_stock {
+text-align: center; /* Centra el texto del elemento con la clase "nav_stock" */
+margin-top: 20px; /* Establece un margen superior de 20 píxeles en el elemento con la clase "nav_stock" */
+}
+
+.nav_stock ul {
+list-style: none; /* Elimina los puntos de la lista */
+margin: 0; /* Establece el margen de la lista en 0 para eliminar cualquier espacio extra */
+padding: 0; /* Establece el relleno de la lista en 0 para eliminar cualquier espacio extra */
+}
+
+.nav_stock ul li {
+display: inline-block; /* Hace que los elementos de lista dentro del elemento con la clase "nav_stock" se muestren como elementos en línea con los demás elementos */
+margin: 0 10px; /* Establece un margen externo de 0 píxeles en la parte superior e inferior y de 10 píxeles a la izquierda y derecha de los elementos de lista dentro del elemento con la clase "nav_stock" */
+}
+
+.nav_stock ul li a {
+  display: block; /* Hace que los enlaces dentro de los elementos de la lista con la clase "nav_stock" se muestren como bloques */
+  padding: 5px 10px; /* Establece el relleno interno de los enlaces dentro de los elementos de la lista con la clase "nav_stock" en 5 píxeles arriba y abajo, y 10 píxeles a la izquierda y derecha */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces dentro de los elementos de la lista con la clase "nav_stock" */
+  color: #333; /* Establece el color del texto de los enlaces dentro de los elementos de la lista con la clase "nav_stock" en gris oscuro */
+  border: 1px solid #ccc; /* Establece un borde sólido de 1 píxel con un color gris claro en los enlaces dentro de los elementos de la lista con la clase "nav_stock" */
+}
+
+.nav_stock ul li a:hover {
+  background-color: #333; /* Establece el color de fondo de los enlaces dentro de los elementos de la lista con la clase "nav_stock" en negro cuando el cursor pasa por encima */
+  color: #fff; /* Establece el color del texto de los enlaces dentro de los elementos de la lista con la clase "nav_stock" en blanco cuando el cursor pasa por encima */
+}
+
+.container_stock {
+  display: flex; /* Hace que el elemento con la clase "container_stock" se comporte como un flexbox */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del elemento con la clase "container_stock" */
+  align-items: center; /* Centra verticalmente los elementos dentro del elemento con la clase "container_stock" */
+}
+
+.menu_stock {
+  display: flex; /* Hace que el elemento con la clase "menu_stock" se comporte como un flexbox */
+  flex-direction: column; /* Establece la dirección de la caja flex como columna */
+  gap: 1rem; /* Establece el espacio entre los elementos hijos del elemento con la clase "menu_stock" en 1 rem */
+  padding: 1rem; /* Establece el relleno interno del elemento con la clase "menu_stock" en 1 rem */
+  border: 1px solid #ccc; /* Establece un borde sólido de 1 píxel con un color gris claro en el elemento con la clase "menu_stock" */
+  border-radius: 5px; /* Establece el radio de las esquinas del elemento con la clase "menu_stock" en 5 píxeles */
+  background-color: #ffffff; /* Establece el color de fondo del elemento con la clase "menu_stock" en blanco */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra al elemento con la clase "menu_stock" con una desenfoque gaussiano de 4 píxeles y una opacidad del 10% */
+}
+
+.menu_stock h1 {
+text-align: center; /* Centra el texto del elemento h1 dentro del elemento con la clase "menu_stock" */
+color: #333; /* Establece el color del texto del elemento h1 dentro del elemento con la clase "menu_stock" en gris oscuro */
+font-size: 24px; /* Establece el tamaño de fuente del elemento h1 dentro del elemento con la clase "menu_stock" en 24 píxeles */
+}
+
+.menu_stock a {
+  display: inline-block; /* Hace que los enlaces dentro del elemento con la clase "menu_stock" se muestren como bloques */
+  text-align: center; /* Centra el texto del enlace dentro del elemento con la clase "menu_stock" */
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace dentro del elemento con la clase "menu_stock" */
+  font-size: 18px; /* Establece el tamaño de fuente del enlace dentro del elemento con la clase "menu_stock" en 18 píxeles */
+  color: #ffffff; /* Establece el color del texto del enlace dentro del elemento con la clase "menu_stock" en blanco */
+  background-color: #007bff; /* Establece el color de fondo del enlace dentro del elemento con la clase "menu_stock" en azul claro */
+  padding: 10px 20px; /* Establece el relleno interno del enlace dentro del elemento con la clase "menu_stock" en 10 píxeles arriba y abajo, y 20 píxeles a la izquierda y derecha */
+  border-radius: 5px; /* Establece el radio de las esquinas del enlace dentro del elemento con la clase "menu_stock" en 5 píxeles */
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición al color de fondo y al color del texto del enlace con una duración de 0.3 segundos */
+}
+
+.menu_stock a:hover {
+  background-color: #0056b3; /* Establece el color de fondo del enlace dentro del elemento con la clase "menu_stock" en azul oscuro cuando el cursor pasa por encima */
+  color: #ffffff; /* Establece el color del texto del enlace dentro del elemento con la clase "menu_stock" en blanco cuando el cursor pasa por encima */
+}
+
+input[type="button"] {
+  display: block; /* Hace que los botones de tipo "button" se muestren como bloques */
+  margin-left: auto; /* Establece un margen izquierdo automático para centrar el botón horizontalmente */
+  margin-right: auto; /* Establece un margen derecho automático para centrar el botón horizontalmente */
+}
+
+.container {
+  max-width: 100%; /* Establece el ancho máximo del elemento con la clase "container" en el 100% del ancho disponible */
+}
+
+#logo {
+  display: flex; /* Hace que el elemento con el ID "logo" se comporte como un contenedor flex */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor flex */
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor flex */
+  margin-top: 30px; /* Establece un margen superior de 30 píxeles en el elemento con el ID "logo" */
+  margin-bottom: 30px; /* Establece un margen inferior de 30 píxeles en el elemento con el ID "logo" */
+}
+
+footer p, footer h5, footer a {
+  text-align: center; /* Centra el texto de los elementos p, h5 y a dentro del elemento footer */
+}
+
+footer a {
+  display: block; /* Hace que los enlaces dentro del elemento footer se muestren como bloques */
+  margin: 0 auto; /* Establece un margen automático en los enlaces dentro del elemento footer para centrarlos horizontalmente */
+}
+
+.btn.logout {
+  display: block; /* Hace que los botones con la clase "logout" se muestren como bloques */
+  margin: 0 auto; /* Establece un margen automático para centrar el botón horizontalmente */
+  margin-bottom: 30px; /* Establece un margen inferior de 30 píxeles en los botones con la clase "logout" */
+  background-color: red; /* Establece el color de fondo de los botones con la clase "logout" en rojo */
+  color: white; /* Establece el color del texto de los botones con la clase "logout" en blanco */
+  border: none; /* Elimina el borde de los botones con la clase "logout" */
+  border-radius: 4px; /* Establece el radio de las esquinas de los botones con la clase "logout" en 4 píxeles */
+  padding: 8px 16px; /* Establece el relleno interno de los botones con la clase "logout" en 8 píxeles arriba y abajo, y 16 píxeles a la izquierda y derecha */
+  text-align: center; /* Centra el texto de los botones con la clase "logout" */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los botones con la clase "logout" */
+}
+
+.btn.logout:hover {
+  background-color: darkred; /* Establece el color de fondo de los botones con la clase "logout" en rojo oscuro cuando el cursor pasa por encima */
+}
